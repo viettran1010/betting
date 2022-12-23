@@ -1,0 +1,329 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "parentCollectionId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "conditionId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "indexSet",
+						"type": "uint256"
+					}
+				],
+				"name": "getCollectionId",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "oracle",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "questionId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "getOutcomeSlotCount",
+						"type": "uint256"
+					}
+				],
+				"name": "getConditionId",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "conditionId",
+						"type": "bytes32"
+					}
+				],
+				"name": "getOutcomeSlotCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "collateralToken",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "collectionId",
+						"type": "bytes32"
+					}
+				],
+				"name": "getPositionId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "collateralToken",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "parentCollectionId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "conditionId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "partition",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mergePositions",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "oracle",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "questionId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "outcome",
+						"type": "uint256"
+					}
+				],
+				"name": "prepareCondition",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "collateralToken",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "parentCollectionId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "conditionId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "indexSets",
+						"type": "uint256[]"
+					}
+				],
+				"name": "redeemPositions",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "questionId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "payouts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "reportPayouts",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "collateralToken",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "parentCollectionId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "conditionId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "partition",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "splitPostion",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"supportsInterface(bytes4)": {
+					"details": "Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/IConditionalTokens.sol": "ConditionalTokens"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/IConditionalTokens.sol": {
+			"keccak256": "0xf67058d6c8a02fc08ca7c0dc90cd3e0ed1d43a3be155d0b58f896a63188c06f1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6074e89d2fe0b6623a98eaa3e07746546387853ce97f0560ae455dd1f00e600f",
+				"dweb:/ipfs/QmZ9h2rizbhrzPBPw4pDmP2u7ow2U8bvqZ9KxGtYXswAfT"
+			]
+		},
+		"contracts/IERC1155.sol": {
+			"keccak256": "0x3745e88ed4f1ceecfe9034abeb99774f0034140257312ddc8f32ee343316ae2c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ec75cccc1785b1524b0f49bb972de8c209e43fa6ceffd715c53cc280a46a81b3",
+				"dweb:/ipfs/QmXKRs1jwjGWE91rdZktTYbBV38cAuSsPzkwrrAEAqUecj"
+			]
+		},
+		"contracts/IERC165.sol": {
+			"keccak256": "0xa36a31b4bb17fad88d023474893b3b895fa421650543b1ce5aefc78efbd43244",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0f235b9175d95111f301d729566e214c32559e55a2b0579c947484748e20679d",
+				"dweb:/ipfs/QmSsNBuPejy1wNe2u3JSt2p9wFhrjvBjFrnAaNe1nDNkEA"
+			]
+		},
+		"contracts/IERC20.sol": {
+			"keccak256": "0xc1290610aec42ee2c1df247fb5ee2d82e976178fb906f701d34f6b656f1b052e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://07025f5f368b572cdcb785e42d142cdbb10acaa0d0168d288d30c25201a7a289",
+				"dweb:/ipfs/QmeSy22Ruxo56qH4GkUJU4SEEv6PsAnzny8MpMGnPkXksc"
+			]
+		}
+	},
+	"version": 1
+}
